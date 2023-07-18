@@ -1,0 +1,33 @@
+$transition-duration: 0.3s;
+
+.modal {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  transition: background-color cubic-bezier(0.215, 0.61, 0.355, 1)
+    $transition-duration;
+}
+
+.modalActive {
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: initial;
+}
+
+.aside {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  right: -80vw;
+  width: 80vw;
+  background-color: white;
+  transition: right cubic-bezier(0.215, 0.61, 0.355, 1) $transition-duration;
+}
+
+.active {
+  right: 0;
+}

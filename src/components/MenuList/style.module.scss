@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+$container-padding: 16px;
+
+.header {
+  padding: $container-padding;
+  display: grid;
+
+  button {
+    margin-left: auto;
+  }
+}
+
+.menuList {
+  padding: $container-padding;
+}
+
+.menuItem {
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid $font-color;
+
+  span {
+    color: $font-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  &:active {
+    background-color: $font-color;
+
+    span {
+      color: white;
+    }
+  }
+}
+
+.menuButton {
+  display: flex;
+  flex: 1;
+}

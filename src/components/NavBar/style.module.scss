@@ -1,0 +1,17 @@
+$grid-column-width: 30px;
+
+.navBar {
+  display: grid;
+  grid-template-columns: $grid-column-width 1fr $grid-column-width;
+  padding: 10px;
+  place-items: center;
+}
+
+.title {
+  grid-column: 2 / 3;
+  text-align: center;
+}
+
+.button {
+  display: grid;
+}
